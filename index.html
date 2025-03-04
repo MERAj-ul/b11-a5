@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <!-- Discover Something -->
-                    <div
+                    <div id="blog"
                         class="flex justify-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl mx-3 w-2/4 p-4">
                         <img class="w-20 h-20" src="assets/board.png" alt="">
                         <div class="content-center">
@@ -189,7 +189,12 @@
         </section>
 
     </main>
+    <script>
+        document.getElementById('blog').addEventListener('click', function () {
+            window.location.href = "./blog.html";
+        })
 
+    </script>
 </body>
 
 </html>
