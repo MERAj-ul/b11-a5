@@ -28,7 +28,7 @@
             <div class="flex max-w-56 max-h-16 gap-9 items-center">
                 <div class="flex items-center gap-4 bg-[#F4F7FF] p-2 rounded-2xl">
                     <img class="max-w-6 max-h-6" src="assets/checkbox.png" alt="">
-                    <p class="font-bold text-xl">23</p>
+                    <p id="task-count" class="font-bold text-xl">23</p>
                 </div>
                 <img class="max-w-8 max-h-8" src="assets/theme-btn.png" alt="">
             </div>
@@ -47,7 +47,7 @@
                         </div>
                         <div>
                             <h4 class="text-sm">Task Assign</h4>
-                            <p class="font-bold text-2xl">05</p>
+                            <p id="task-assigned" class="font-bold text-2xl">06</p>
                         </div>
                     </div>
                     <!-- Discover Something -->
@@ -84,7 +84,8 @@
                                 <p class="text-sm">Deadline</p>
                                 <p class="text-lg">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
+                            <button id="btn1"
+                                class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3 complete-btn">Completed</button>
                         </div>
                     </div>
                     <!-- 2 -->
@@ -100,7 +101,8 @@
                                 <p class="text-sm">Deadline</p>
                                 <p class="text-lg">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
+                            <button id="btn2"
+                                class="disabled bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
                         </div>
                     </div>
                     <!-- 3 -->
@@ -116,7 +118,7 @@
                                 <p class="text-sm">Deadline</p>
                                 <p class="text-lg">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
+                            <button id="btn3" class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
                         </div>
                     </div>
                     <!-- 4 -->
@@ -132,7 +134,7 @@
                                 <p class="text-sm">Deadline</p>
                                 <p class="text-lg">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
+                            <button id="btn4" class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
                         </div>
                     </div>
                     <!-- 5 -->
@@ -148,7 +150,7 @@
                                 <p class="text-sm">Deadline</p>
                                 <p class="text-lg">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
+                            <button id="btn5" class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3">Completed</button>
                         </div>
                     </div>
                     <!-- 6 -->
@@ -164,7 +166,7 @@
                                 <p class="text-sm">Deadline</p>
                                 <p class="text-lg">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="btn6"
                                 class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3 ">Completed</button>
                         </div>
                     </div>
@@ -178,7 +180,7 @@
                         <img src="assets/activity.png" alt="">
                         <p>Activity Log</p>
                     </div>
-                    <button class="bg-[#3752FD] w-34 h-11 text-lg text-white rounded-lg px-3 mb-2 mx-20">Clear
+                    <button class="bg-[#3752FD] w-40 h-11 text-lg text-white rounded-lg px-3 mb-2 mx-20">Clear
                         History</button>
                 </div>
                 <!-- Activity list -->
@@ -194,7 +196,7 @@
             window.location.href = "./blog.html";
         })
 
-        window.addEventListener('DOMContentLoaded',function(){
+        window.addEventListener('DOMContentLoaded', function () {
             let today = new Date();
 
             let month = today.getMonth() + 1;
@@ -204,9 +206,10 @@
 
             let currentDate = `${date}-${month}-${year}`
 
-            document.getElementById('current-Date').innerText = currentDate;  
+            document.getElementById('current-Date').innerText = currentDate;
         })
     </script>
+    <script src="script.js/task.js"></script>
 </body>
 
 </html>
